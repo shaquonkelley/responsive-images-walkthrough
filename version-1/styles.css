@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+/* overall layout styles */
+body{
+    margin: 30px;
+}
+
+img{ 
+    max-width: 100%;
+}
+
+section{
+    width: 100%;
+}
+
+/* class specific styles */
+
+.page_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero{
+    width:100%;
+    
+}
+
+.hero > img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.profile{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.profile > img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+
+.footer{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.cat-1, .cat-2, .cat-3 {
+    margin-top: 10px;
+    max-width: 100%;
+    height: 250px;
+}
+
+
+.footer_img > img {
+    width:100%;
+    
+    min-width: 40%;
+    max-width: 401px;
+    
+    min-height: 200px;
+    max-height: 300px;
+    
+    object-fit: cover;
+}
+
+.cat-2 > img {
+    max-height: 200px;
+    /* max-width: 400px; */
+    object-fit: cover;
+}
+
+
+/* Media Queries */
+
+/*  Mobile Styles */
+/* @media only screen and (max-width: 400px){
+    .hero{
+        width:100%;
+        
+    }
+    
+    .hero > img {
+        width: 100%;
+        object-fit: cover;
+        height:40vh;
+    }
+} */
+
+/* Tablet Styles  */
+
+@media (min-width: 401px) {
+    .hero{
+        width:100%;
+        
+    }
+    
+    .hero > img {
+        width: 100%;
+        object-fit: cover;
+        height:30vh;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+    .cat-1, .cat-2, .cat-3 {
+        margin-top: 10px;
+        width: 32%;
+        height: 250px;
+        
+    }
+    
+    .cat-2 > img {
+        max-height: 200px;
+        width: 400;
+        object-fit: cover;
+    }
+}
+
+/* Desktop Styles */
+
+/* @media only screen and (min-width: 961px) { */
+/* } */

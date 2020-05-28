@@ -1,0 +1,11 @@
+.hero-pic-container {
+    width: 100%;
+}
+
+img{
+    width: ;
+}
+.hero-pic-container img {
+    height: 55vh;
+    object-fit: contain;
+}
