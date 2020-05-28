@@ -7,14 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="hero-pic-container">
-            <picture>
-                <source media="(min-width: 550px)" srcset="../images/hero-big.jpg">
-                <source media="(min-width: 320px)" srcset="../images/hero-small.jpg">
-                <img src="../images/hero-large.jpg" alt="">
+            <!-- Hero Picture -->
+            <picture class="hero">
+                <source media="(min-width: 550px)" srcset="images/hero-big.jpg">
+                <source media="(min-width: 320px)" srcset="images/hero-small.jpg">
+                <img src="./images/hero-big.jpg">
             </picture>
         </div>
+        <!-- Profile Picture -->
+        <div class="profile-pic-container">
+            <img src="./images/profile.png">
+        </div>
+        <h3>Tom the Cat</h3>
+
     </header>
+    <main class="main">
+        <!-- main -->
+        <div class="gallery-pic cat-1">
+            <img src="./images/cat-1.jpg" alt="">   
+        </div>
+        <div class="gallery-pic cat-2">
+            <img src="./images/cat-2.jpg" alt="">   
+        </div>
+        <div class="gallery-pic cat-3">
+            <img src="./images/cat-3.jpg" alt="">   
+        </div>
+        
+    
+    </main>
+
 </body>
 </html>

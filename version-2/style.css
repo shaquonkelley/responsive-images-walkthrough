@@ -1,11 +1,83 @@
-.hero-pic-container {
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
     width: 100%;
 }
 
-img{
-    width: ;
+/* Layout styles */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
 }
-.hero-pic-container img {
-    height: 55vh;
-    object-fit: contain;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+/* block styles */
+
+.hero img{
+    object-fit: cover;
+    height: 25vh;
+}
+
+.profile-pic-container {
+    width: 75px;
+}
+
+.profile-pic-container img {
+    border-radius: 50%;
+}
+
+.gallery-pic {
+    width: 30%;
+    max-width: 60%;
+    min-width: 150px;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    /* display: block; */
+}
+
+.gallery-pic img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Tablet --------------------------------------> */
+
+@media(min-width: 500px){
+    .main{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .gallery-pic {
+        width: 25%;
+    }
+}
+
+/* Desktop -------------------------------------> */
+
+@media (min-width: 850px) {
+    /* desktop styles go here */
+
+}
+
